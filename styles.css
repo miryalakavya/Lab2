@@ -1,114 +1,128 @@
 /* Flexbox Part 1 */
-
 #flex-section1 ul {
-
-}
-
-/* end Flexbox Part 1 */
-
-
-/* Flexbox Part 2 */
-
-#flex-section2 ul {
-
-}
-
-#flex-section2 li {
-
-}
-
-#flex-section2 .item1 {
-
-}
-
-#flex-section2 .item2 {
-
-}
-
-#flex-section2 .item3 {
-
-}
-
-/* end Flexbox Part 2 */
-
-
-/* Flexbox Part 3 */
-
-#flex-section3 .box {
-
-}
-
-#flex-section3 .tags ul {
-
-}
-
-/* end Flexbox Part 3 */
-
-
-/* Grid Part 1 */
-
-#grid-section1 .grid {
-
-}
-
-/* end Grid Part 1 */
-
-
-/* Grid Part 2 */
-
-#grid-section2 .gridboxblue {
-
-}
-
-#grid-section2 .gridboxred {
-
-}
-
-/* end Grid Part 2 */
-
-
-/* Grid Part 3 */
-
-#grid-section3 .grid {
-
-}
-
-#grid-section3 .box1 {
-
-}
-
-#grid-section3 .box2 {
-
-}
-
-#grid-section3 .box3 {
-
-}
-
-#grid-section3 .box4 {
-
-}
-
-/* end Grid Part 3 */
-
-
-/* Transition Part */
-
-#transition-section .box a {
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+	list-style-type: none;
+  }
+  
+  /* end Flexbox Part 1 */
+  
+  /* Flexbox Part 2 */
+  #flex-section2 ul {
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+	list-style-type: none;
+  }
+  
+  #flex-section2 .item1 {
+	order: 1;
+  }
+  
+  #flex-section2 .item2 {
+	order: 3;
+  }
+  
+  #flex-section2 .item3 {
+	order: 2;
+	flex-grow: 1;
+  }
+  
+  /* end Flexbox Part 2 */
+  
+  /* Flexbox Part 3 */
+  #flex-section3 .box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+  }
+  
+  #flex-section3 .tags ul {
+	display: flex;
+	gap: 10px;
+	padding: 0;
+	list-style-type: none;
+  }
+  
+  #flex-section3 .tags li {
+	background-color: #ccc;
+	padding: 5px 10px;
+	border-radius: 10px;
+  }
+  
+  /* end Flexbox Part 3 */
+  
+  /* Grid Part 1 */
+  #grid-section1 .grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+	grid-auto-rows: 100px;
+  }
+  
+  /* end Grid Part 1 */
+  
+  /* Grid Part 2 */
+  #grid-section2 .gridboxblue {
+	grid-row: 1 / 4;
+	grid-column: 2 / 3;
+	z-index: 2;
+  }
+  
+  #grid-section2 .gridboxred {
+	grid-row: 2 / 4;
+	grid-column: 1 / 3;
+	z-index: 1;
+  }
+  
+  /* end Grid Part 2 */
+  
+  /* Grid Part 3 */
+  #grid-section3 .grid {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 100px 300px 100px;
+	gap: 10px;
+  }
+  
+  #grid-section3 .box1 {
+	grid-column: 1 / 3;
+  }
+  
+  #grid-section3 .box2 {
+	grid-row: 2 / 3;
+	grid-column: 1 / 2;
+  }
+  
+  #grid-section3 .box3 {
+	grid-row: 2 / 3;
+	grid-column: 2 / 3;
+  }
+  
+  #grid-section3 .box4 {
+	grid-column: 1 / 3;
+	grid-row: 3 / 4;
+  }
+  
+  /* end Grid Part 3 */
+  
+  /* Transition Part */
+  #transition-section .box a {
 	display: inline-block;
 	background-color: #ccc;
 	color: #000;
 	padding: 20px;
 	text-decoration: none;
-
-
-}
-
-#transition-section .box a:hover {
+	transition: background-color 0.5s, color 0.5s;
+  }
+  
+  #transition-section .box a:hover {
 	background-color: #cc0000;
 	color: #fff;
-
-
-}
-
-/* end Transition Part */
+	transition: background-color 3s, color 3s;
+  }
+  
+  /* end Transition Part */
+  
